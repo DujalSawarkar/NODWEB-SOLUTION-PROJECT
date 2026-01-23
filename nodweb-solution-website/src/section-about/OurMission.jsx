@@ -40,7 +40,7 @@ function OurMission() {
   };
 
   return (
-    <section className="w-full bg-[#0B0F19] text-white py-16 px-4">
+    <section className="w-full bg-[#0B0F19] text-amber-100 py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl sm:text-4xl font-bold leading-tight mb-6">
          OUR MISSION
