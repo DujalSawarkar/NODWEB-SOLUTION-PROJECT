@@ -43,7 +43,7 @@ function Technologies() {
   };
 
   return (
-    <section className="w-full bg-[#0B0F19] py-20">
+    <section className="w-full bg-[#0e1322] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-14">
