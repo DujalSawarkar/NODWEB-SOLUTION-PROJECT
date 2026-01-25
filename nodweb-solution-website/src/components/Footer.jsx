@@ -10,7 +10,8 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../assets/nodweb_logo.webp"; 
+import logo from "../assets/nodweb_logo.webp";
+import threads from "../assets/icons/threads.svg";
 
 const footerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -94,7 +95,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="hover:text-white transition">
+                  <Link to="/about" className="hover:text-white transition">
                     Projects
                   </Link>
                 </li>
@@ -106,28 +107,56 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex-1">
+            <div className="flex-1 text-white">
               <h3 className="text-white font-semibold mb-3">Connect</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-1">
-                  <Mail className="h-4 w-4" /> contact@nodweb.io
+              <ul className="space-y-3">
+                <li className="flex items-center gap-1 text-sm font-medium">
+                  <a
+                    href="mailto:nodwebsolutionpvtltd@gmail.com"
+                    target="_blank"
+                    className="flex items-center gap-1 hover:underline hover:text-blue-600 transition-colors"
+                  >
+                    <Mail className="h-4 w-4" />
+                    nodwebsolutionpvtltd@gmail.com
+                  </a>
                 </li>
 
                 <div className="flex items-center justify-between">
-                  <a href="#">
-                    <LinkedinIcon className="h-10 w-10 hover:bg-blue-700/20 transition-all p-2 rounded" />
+                  <a href="#" target="_blank">
+                    <LinkedinIcon className="h-10 w-10 hover:bg-gray-300/20 transition-all p-2 rounded" />
                   </a>
-                  <a href="#">
-                    <Twitter className="h-10 w-10 hover:bg-blue-700/20 transition-all p-2 rounded" />
+                  <a href="https://x.com/nodwebsolution" target="_blank">
+                    <Twitter className="h-10 w-10 hover:bg-gray-300/20 transition-all p-2 rounded" />
                   </a>
-                  <a href="#">
-                    <Instagram className="h-10 w-10 hover:bg-blue-700/20 transition-all p-2 rounded" />
+                  <a
+                    href="https://www.instagram.com/nodwebsolutionpvt.ltd/"
+                    target="_blank"
+                  >
+                    <Instagram className="h-10 w-10 hover:bg-gray-300/20 transition-all p-2 rounded" />
                   </a>
-                  <a href="#">
-                    <Facebook className="h-10 w-10 hover:bg-blue-700/20 transition-all p-2 rounded" />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61587208764023"
+                    target="_blank"
+                  >
+                    <Facebook className="h-10 w-10 hover:bg-gray-300/20 transition-all p-2 rounded" />
                   </a>
-                  <a href="#">
-                    <MessageCircle className="h-10 w-10 hover:bg-blue-700/20 transition-all p-2 rounded" />
+                  <a
+                    href="https://wa.me/917841061453?text=Hello!%20I%20visited%20your%20website%20and%20I%20am%20interested%20in%20your%20IT%20solutions.%20Could%20you%20please%20share%20more%20details%20about%20your%20services?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="h-10 w-10 hover:bg-gray-300/20 transition-all p-2 rounded" />
+                  </a>
+
+                  <a
+                    href="https://www.threads.com/@nodwebsolutionpvt.ltd"
+                    target="_blank"
+                  >
+                    <img
+                      src={threads}
+                      alt=""
+                      className="brightness-0 invert h-10 w-10 hover:bg-blue-700/20 transition-all p-2 rounded"
+                    />
                   </a>
                 </div>
               </ul>
