@@ -27,7 +27,9 @@
 
 /* Performance ring visual */
 .perf-wrap{display:flex;align-items:center;justify-content:center;gap:2.5rem;padding:4rem 0}
-.perf-ring{position:relative;width:420px;height:420px;display:block;margin:0}
+.perf-ring{position:relative;display:block;margin:0;width:100%;height:auto;max-width:none}
+.perf-visual{display:flex;align-items:center;justify-content:center}
+.perf-visual.md-offset{margin-right:2rem}
 .perf-ring .arc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border-style:solid;border-color:transparent;pointer-events:none}
 
 /* make sure arcs and orbs are static (no animation) */

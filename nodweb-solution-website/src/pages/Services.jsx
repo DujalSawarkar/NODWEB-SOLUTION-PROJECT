@@ -235,36 +235,38 @@ export default function Services() {
       </section>
 
       {/* Annual Performance section */}
-      <section className="container mx-auto px-6 py-10">
-        <header className="max-w-3xl mx-auto text-center pt-12 mb-12">
+      <section className="container mx-auto px-6 py-8 md:py-24 min-h-screen" style={{background: 'linear-gradient(180deg, rgba(8,10,15,0.04), transparent)'}}>
+        <header className="max-w-3xl mx-auto text-center pt-0 mb-28">
           <span className="inline-block bg-gradient-to-r from-teal-500 to-cyan-400 text-white text-sm rounded-full px-3 py-1 mb-4">Built on Consistency &amp; Quality</span>
           <h2 className="text-3xl md:text-4xl font-extrabold leading-normal mb-3">Consistent Performance. <span className="text-indigo-400">Reliable Delivery.</span></h2>
           <p className="mt-0 text-gray-300 max-w-xl mx-auto leading-relaxed">A high-level view of how NodWeb Solution maintains quality, transparency, and dependable execution across every engagement.</p>
           <p className="mt-2 text-sm text-gray-400">Trusted by businesses focused on long-term digital growth.</p>
         </header>
 
-        <section className="perf-section grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
+  <section className="perf-section grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-56 items-center mt-12 md:mt-20">
 
           {/* left: perf visual */}
-          <motion.div className="perf-visual order-1 hidden md:flex justify-center md:justify-start" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-            <div ref={perfRef} className="perf-visual overflow-visible md:ml-6">
-              <div className="w-48 sm:w-64 md:w-[300px]">
-                {showPerf ? (
-                  <React.Suspense fallback={<div className="w-full h-[360px] bg-transparent" />}>
+          <motion.div className="perf-visual order-1 hidden md:flex justify-end md:pr-8 z-30 self-center" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
+          <div ref={perfRef} className="perf-visual overflow-visible md:mr-8">
+            <div className="w-72 sm:w-[28rem] md:w-[720px]">
+              {showPerf ? (
+                <React.Suspense fallback={<div className="w-full h-[720px] bg-transparent" />}>
+                  <div className="md:w-[720px] w-full">
                     <PerfVisual />
-                  </React.Suspense>
-                ) : (
-                  <div className="w-full h-[360px] bg-transparent" />
-                )}
-              </div>
+                  </div>
+                </React.Suspense>
+              ) : (
+                <div className="w-full h-[720px] bg-transparent" />
+              )}
             </div>
+          </div>
           </motion.div>
 
           {/* right: stacked performance points */}
-          <motion.div className="perf-list order-2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.06 }}>
+          <motion.div className="perf-list order-2 md:pl-16 lg:pl-24 flex items-center" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.06 }}>
             <div className="max-w-full md:max-w-md">
-              <div className="mt-4 space-y-4">
-                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-3 border-b border-[#111827]">
+              <div className="mt-4 space-y-6">
+                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-4 border-b border-[#111827]">
                   <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center text-white font-medium text-sm">1</div>
                   <div>
                     <h4 className="text-md font-semibold"> Proven Technical Expertise</h4>
@@ -272,7 +274,7 @@ export default function Services() {
                   </div>
                 </motion.div>
 
-                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-3 border-b border-[#111827]">
+                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-4 border-b border-[#111827]">
                   <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center text-white font-medium text-sm">2</div>
                   <div>
                     <h4 className="text-md font-semibold"> Performance-Driven Delivery</h4>
@@ -280,7 +282,7 @@ export default function Services() {
                   </div>
                 </motion.div>
 
-                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-3 border-b border-[#111827]">
+                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-4 border-b border-[#111827]">
                   <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center text-white font-medium text-sm">3</div>
                   <div>
                     <h4 className="text-md font-semibold"> Transparent Process</h4>
@@ -288,7 +290,7 @@ export default function Services() {
                   </div>
                 </motion.div>
 
-                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-3">
+                <motion.div {...itemMotionProps} className="flex items-start gap-4 py-4">
                   <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center text-white font-medium text-sm">4</div>
                   <div>
                     <h4 className="text-md font-semibold"> Long-Term Support</h4>
