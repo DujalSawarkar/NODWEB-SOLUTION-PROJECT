@@ -1,0 +1,48 @@
+/* Overrides and service-specific utilities (kept separate to avoid merge conflicts)
+   - Slide-in animations
+   - Small helpers used by the Services page
+   - Isolation of any hacks so `index.css` stays upstream-friendly
+*/
+
+/* small helpers used by the services page */
+.blur-2xl{filter:blur(24px)}
+.bg-white\/2{background-color: rgba(255,255,255,0.02)}
+
+/* slide-in image and text */
+.slide-in-left{opacity:0;transform:translateX(-30px);animation:slideInLeft 700ms cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes slideInLeft{to{opacity:1;transform:translateX(0)}}
+
+.slide-in-right{opacity:0;transform:translateX(120px);animation:slideInRight 700ms cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes slideInRight{to{opacity:1;transform:translateX(0)}}
+
+.services-section .hidden.md\:block{display:block}
+@media (max-width:767px){
+  .services-section .hidden.md\:block{display:none}
+}
+
+.shadow-2xl{box-shadow:0 30px 60px rgba(2,6,23,0.6)}
+
+/* Prevent card top borders from producing a continuous line across the row */
+.services-section .grid > * { border-top-color: transparent !important; outline: none !important; }
+
+/* Performance ring visual */
+.perf-wrap{display:flex;align-items:center;justify-content:center;gap:2.5rem;padding:4rem 0}
+.perf-ring{position:relative;display:block;margin:0;width:100%;height:auto;max-width:none}
+.perf-visual{display:flex;align-items:center;justify-content:center}
+.perf-visual.md-offset{margin-right:2rem}
+.perf-ring .arc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border-style:solid;border-color:transparent;pointer-events:none}
+
+/* make sure arcs and orbs are static (no animation) */
+.perf-ring .arc.arc-1{width:360px;height:360px;border-width:24px;border-top-color:rgba(37,99,235,0.12);animation:none}
+.perf-ring .arc.arc-2{width:280px;height:280px;border-width:22px;border-top-color:rgba(56,189,248,0.10);animation:none}
+.perf-ring .arc.arc-3{width:200px;height:200px;border-width:18px;border-top-color:rgba(99,102,241,0.08);animation:none}
+
+/* static badge styles */
+.perf-ring .orb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:9999px;background:linear-gradient(180deg,#38BDF8,#2563EB);display:flex;align-items:center;justify-content:center;color:white;font-weight:600;box-shadow:0 10px 30px rgba(37,99,235,0.18);animation:none}
+.perf-ring .orb.orb-1{transform-origin:50% 50%}
+.perf-ring .orb.orb-2{transform-origin:50% 50%}
+.perf-ring .orb.orb-3{transform-origin:50% 50%}
+
+/* Removed legacy `.perf-wrap` and `.perf-content` rules that conflicted with the
+   new `perf-section`/`perf-visual` layout. The PerfVisual SVG uses `.perf-ring`
+   rules above and the layout is now controlled from the page-level grid. */

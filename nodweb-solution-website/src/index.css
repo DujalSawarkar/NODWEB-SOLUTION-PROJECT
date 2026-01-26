@@ -4,12 +4,26 @@
 
 @import "tailwindcss";
 
+@import "./styles/services.css";
+
 
 body {
     @apply font-sans;
 }
+
 .gilda-display-regular {
     font-family: "Gilda Display", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+:root{
+  --bg-primary: #0B0F19;
+  --bg-secondary: #111827;
+  --brand-primary: #2563EB;
+  --brand-accent: #38BDF8;
+  --border: #1F2933;
+  --text-heading: #F9FAFB;
+  --text-body: #D1D5DB;
+  --text-muted: #9CA3AF;
+}
