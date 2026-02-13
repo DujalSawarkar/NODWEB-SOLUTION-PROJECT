@@ -121,7 +121,7 @@ function Contact() {
         keywords="contact NodWeb Solution, Nagpur digital agency contact, web development inquiry, web developer contact, app development quote, app developer contact, digital marketing consultation, seo services quote, google ads inquiry, social media marketing, Butibori Nagpur, web company contact, marketing agency contact"
         url="/contact"
       />
-      <main className="bg-[#05070F] text-white min-h-screen">
+      <main className="bg-[#05070F] text-white min-h-screen pt-25">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-20">
         <motion.header
           initial={{ opacity: 0, y: -8 }}

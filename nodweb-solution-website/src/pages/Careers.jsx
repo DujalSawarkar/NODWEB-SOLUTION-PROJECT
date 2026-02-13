@@ -118,7 +118,7 @@ export default function Careers() {
 	}, [])
 
 	return (
-		<main className="bg-[#111827] text-white min-h-screen">
+		<main className="bg-[#111827] text-white min-h-screen pt-25">
 			{/* Hero */}
 			<section className="pt-12 md:pt-20 pb-8">
 				<div className="max-w-6xl mx-auto px-6 text-center">

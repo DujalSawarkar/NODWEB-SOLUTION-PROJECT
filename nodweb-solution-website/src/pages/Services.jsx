@@ -182,7 +182,7 @@ export default function Services() {
       keywords="web development services, web development company, website developer, web design services, app development, app development company, mobile app development, android developer, ios developer, flutter developer, react native developer, digital marketing services, digital marketing agency, seo services, seo company, google ads, ppc agency, social media marketing, smm services, marketing agency, ecommerce development, ecommerce website, shopify developer, wordpress developer, Nagpur digital services"
       url="/services"
     />
-    <main className="services-page bg-[#05070F] text-white">
+    <main className="services-page bg-[#05070F] text-white pt-25">
 
       {/* Hero / Intro */}
       <section className="max-w-6xl mx-auto px-6 py-12 md:py-20">
