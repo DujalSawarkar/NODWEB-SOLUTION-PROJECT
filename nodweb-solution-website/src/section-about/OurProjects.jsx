@@ -2,30 +2,34 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 
-import vid1 from "../assets/Video-998.mp4"
+import vid1 from "../assets/videos/solar_video.mp4"
+import vid2 from "../assets/videos/cctv_project_video.mp4"
+import vid3 from "../assets/videos/construction_project.mp4"
+import own_website_img from "../assets/videos/own_website.png"
 
 function OurProjects() {
   const projects = [
     {
-      title: "DocSense AI",
-      description: "Chat with PDFs using AI",
-      link: "#",
-    //   video: "/videos/docsense-preview.mp4",     add video link in future
-    video: vid1,
+      title: "Solar Project",
+      description: "Affordable rooftop solar energy systems",
+      link: "https://onsunpaysolar.in/",
+      video: vid1,
       image:
         "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "HelpDesk Pro",
-      description: "Ticket management system",
-      link: "#",
+      title: "CCTV Project",
+      description: "Advanced CCTV systems for protection",
+      link: "https://www.nsdigitalsecurity.in/",
+      video: vid2,
       image:
         "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack shopping website",
+      title: "Construction Website",
+      description: "Reliable builders for every project",
       link: "#",
+      video: vid3,
       image:
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
     },
@@ -33,8 +37,7 @@ function OurProjects() {
       title: "Company Portfolio",
       description: "Modern business website",
       link: "#",
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+      image: own_website_img,
     },
     {
       title: "FinTrack Dashboard",

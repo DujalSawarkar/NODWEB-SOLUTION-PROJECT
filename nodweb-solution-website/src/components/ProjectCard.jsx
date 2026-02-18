@@ -19,6 +19,7 @@ function ProjectCard({ title, description, image, video, link = "#" }) {
   return (
     <a
       href={link}
+      target="_blank"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="block h-68 bg-[#0b0f19] rounded-2xl overflow-hidden border border-white/10 hover:border-blue-700/30 transition-all duration-300 group flex-col cursor-pointer hover:-translate-y-1 hover:shadow-xl shadow-blue-700/10"
@@ -38,7 +39,7 @@ function ProjectCard({ title, description, image, video, link = "#" }) {
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
           />
         )}
 
